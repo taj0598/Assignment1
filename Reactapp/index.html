@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My react Code</title>
+</head>
+<body>
+    <!--  -->
+<div id="root"></div>
+<script src="App.js"></script>
+</body>
+</html>
+
+<!-- Emmet : plain html codehtml:5 will generate the html code
+    CDN : Content delivery network (ex: url where we can pull content from a file)
+crossorigin content attribute on media elements is a CORS settings attribute.
+he CORS(crossorigin resource sharing) mechanism supports secure cross-origin requests and data transfers between browsers and servers.
+Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
+The Cross-Origin Resource Sharing standard works by adding new HTTP headers that let servers describe which origins are permitted to read that information from a web browser
+why 2 links or cdn for react and react dom?
+React - core dev file
+React dome- browser update and dom  ..as react is not fixed only to browser (react native used for mobiles.)
+**
+**npm : package manager for javascript languagues.
+**Inside node modules folder we see many folder other that React and React dom. there are called transitive dependcies. 
+   means they are dependencies of depndencies.
+**webpack: statid module bundler for modren JS apps.  - combines every module of projects needs into one or more bundles
+**babel: Transcompiler used to convert ES2015+ code to lower js code or backward-compatible that can be run by old JS engines.
+babel can convert JSX sytanx!
+**parcel: is also a bundler. but its a zero configuration bundler . whereas we need a basic config file to run a app with webpack(lates web pack is also a zero config)
+   Parcel has tree shaking algorith , code splitting etc (responsibilities of parcel.)
+   Hot reloading : or HMR hot module replacement- one of the resp of parcel: when we make change in code and save then the code automatically reloads.
+** bundler is a development tool that combines many JavaScript code files into a single one that is production-ready loadable in the browser.
+  In simple words a bundler manges all the depencies in large apps t=keeps track of them and update them which saves a lot of time to developers.
+   In order to to do -> its creates a dependencies relation ship map. we have to specify a entry point (which is a mian page like index.js or index.html)
+   and bundler automatically find what are its dependencies and dependency of dependencies etc.
+   Once the mapping is done its delivers a static assests that browser can successfully process.
+ **Live Server : help us to run the code locally with command (ctl+shipy+p and serach for open with live server)
+                bundler (ex: Parcel) hepl us to run the code instead of web server   or parcels one of the responsibility is to initiate live serve.
+
+   https://snipcart.com/blog/javascript-module-bundler
+** diff b/w dependencies and dev dependencies?
+  npm i --package neame - is a dependencies
+  npm i -D will install dev dependencies. (we need it in local code but not production so we get them as dev dependencies)
+** diff b/w npm and npx ?
+npx -generally executes the code rite away.
+
+.parcel-cache ?
+
+package.json and package-lock.json - will have all the inf req for recreating node modules. In package wemay have ^ symbol which may install latest version. but the package-lock ensures that we use the version provided in package-lock in prod app
+pacg-lock - will have exact snapshot of dependenies info currently running in dev.
+pollyfills: 
+-->
